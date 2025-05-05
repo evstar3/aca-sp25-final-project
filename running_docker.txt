@@ -7,6 +7,6 @@ sudo usermod -aG docker $USER
 
 docker buildx build --tag my-ubuntu-env .
 
-docker run -it --rm -v "$PWD":/project my-ubuntu-env
+docker run -it -v "$PWD":/project my-ubuntu-env
 
 docker commit my-dev-env my-ubuntu-env:snapshot1
