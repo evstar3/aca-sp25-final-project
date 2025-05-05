@@ -26,9 +26,6 @@ RUN apt-get update && apt-get install -y \
 # Set working directory inside the container
 WORKDIR /project
 
-# Optionally copy your code into the container
-# COPY . .
-
 # Default shell
 CMD ["/bin/bash"]
 ' 
