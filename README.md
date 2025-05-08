@@ -39,7 +39,7 @@ Follow these steps to set up and run the project on your local machine:
     ```
     build-essential cmake doxygen git libboost-all-dev libcapstone-dev libelf-dev libgoogle-perftools-dev libhdf5-serial-dev libpng-dev libprotobuf-dev libprotoc-dev m4 mypy pkg-config pre-commit protobuf-compiler python3-dev python3-pydot python3-tk python3-venv scons wget zlib1g zlib1g-dev
     ```
-    They should be available for most Linux distros. However, if you would like to use the included Dockerfile to manage the packages, please refer to the [Docker section]() on how to set it up. 
+    They should be available for most Linux distros. However, if you would like to use the included Dockerfile to manage the packages, please refer to the [Docker section](https://github.com/evstar3/aca-sp25-final-project?tab=readme-ov-file#setting-up-the-dockerfile) on how to set it up. 
 
 
 6. **Build the `gem5` Simulator:**
