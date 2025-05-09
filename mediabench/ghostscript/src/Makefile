@@ -173,7 +173,8 @@ CONFIG=
 
 # Define the name of the C compiler.
 
-CC=../../../bin/ssbig-na-sstrix-gcc -static -ansi -I ../../../ssbig-na-sstrix/include #gcc -mv8 -static
+#CC=../../../bin/ssbig-na-sstrix-gcc -static -ansi -I ../../../ssbig-na-sstrix/include
+CC=gcc -static
 
 # Define the name of the linker for the final link step.
 # Normally this is the same as the C compiler.
@@ -322,7 +323,7 @@ AK=
 # Define the compilation rules and flags.
 
 CCC=$(CC) $(CCFLAGS) -c
-CCAUX=gcc -mv8 -static 	 
+CCAUX=gcc -static 	 
 #We can't use -fomit-frame-pointer with -pg....
 #CCLEAF=$(CCC)
 CCLEAF=$(CCC) -fomit-frame-pointer

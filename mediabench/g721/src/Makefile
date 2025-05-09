@@ -6,7 +6,8 @@
 
 #############################
 # Modified by C. Lee
-CC =  ../../../bin/ssbig-na-sstrix-gcc # gcc -mv8 -static
+#CC =  ../../../bin/ssbig-na-sstrix-gcc # gcc -mv8 -static
+CC=gcc -static
 CFLAGS = -O3
 
 # Rules to build sample programs do not depend on a UNIX library program

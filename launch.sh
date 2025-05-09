@@ -14,7 +14,7 @@ fi
 
 # Arguments
 
-BINARY=
+CMD=
 INFILE="/dev/null"
 OUTDIR=
 
@@ -22,23 +22,23 @@ OUTDIR=
 
 usage() {
 cat <<EOF
-./launch.sh [-h] -b BINARY -o OUTDIR [-i INFILE]
+./launch.sh [-h] -c COMMAND -o OUTDIR [-i INFILE]
 
 -h,--help               Show this message and exit
--b,--binary BINARY      The executable to simulate 
+-c,--cmd COMMAND        The executable to simulate 
 -o,--outdir OUTDIR      The output directory name
 -i,--infile INFILE      The file to redirect to the simulator
                         stdin. Default: /dev/null
 EOF
 }
 
-PARSED_ARGUMENTS=$(getopt -o hb:i:o: --l help,binary:,infile:,outdir: -- "$@")
+PARSED_ARGUMENTS=$(getopt -o hc:i:o: --l help,cmd:,infile:,outdir: -- "$@")
 eval set -- "$PARSED_ARGUMENTS"
 
 while true; do
     case $1 in
-        -b|--binary)
-            BINARY="$2"
+        -c|--cmd)
+            COMMAND="$2"
             shift
             ;;
         -i|--infile)
@@ -64,16 +64,19 @@ shift
 
 if [ ! -z "$@" ]; then
     echo "Unexpected positional arguments" 1>&2
+    usage
     exit 1
 fi
 
-if [ -z "$BINARY" ]; then
-    echo "Expected BINARY" 1>&2
+if [ -z "$COMMAND" ]; then
+    echo "Expected COMMAND" 1>&2
+    usage
     exit 1
 fi
 
 if [ -z "$OUTDIR" ]; then
     echo "Expected OUTDIR" 1>&2
+    usage
     exit 1
 fi
 
@@ -82,7 +85,7 @@ fi
     --redirect-stdout \
     --redirect-stderr \
     "$BASE_CONFIG" \
-    "$BINARY" &
+    $COMMAND &
 
 for RATE in $RATES; do
     QTR_RATE=$(echo $RATE / 4 | bc)
@@ -93,7 +96,7 @@ for RATE in $RATES; do
         --redirect-stderr \
         "$DECAY_CONFIG" \
         -r "$QTR_RATE" \
-        "$BINARY" &
+        $COMMAND &
 done
 
 wait

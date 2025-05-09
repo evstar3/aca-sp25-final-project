@@ -1,0 +1,27 @@
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version DEVELOP-FOR-25.0
+gem5 compiled May  9 2025 14:33:56
+gem5 started May  9 2025 16:20:08
+gem5 executing on EVAN-DAY-SPECTRE, pid 7091
+command line: gem5/build/X86/gem5.opt --outdir=results/epic/8192 --redirect-stdout --redirect-stderr gem5/configs/decay_cache/single_rate.py -r 2048 mediabench/epic/bin/epic mediabench/epic/data/test_image.pgm -b 25
+
+info: Standard input is not a terminal, disabling listeners.
+Global frequency set at 1000000000000 ticks per second
+Beginning simulation...
+Xsize: 256, Ysize: 256.
+Building pyramid, 4 levels ...
+Quantizing, binsize = 25.000000 ...
+Run-length coding ...
+Huffman coding ... 
+Low_pass_size: 256,  Symbol_stream_length: 13998,  Huffman_stream_length: 6592
+Writing EPIC file ...
+Stored 8 byte header.
+Stored 516 bytes of Raw (lowpass) Data.
+Stored 36 bytes of Binsize Info.
+Stored 280 byte Huffman tree .
+Stored 6592 bytes of encoded data.
+Storage total: 7432 bytes (0.907227 bits/pixel)
+Compression ratio = 8.818084:1.
+Exiting @ tick 15056195000 because exiting with last active thread context

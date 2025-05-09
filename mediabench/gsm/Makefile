@@ -32,8 +32,7 @@ SASR	= -DSASR
 # CC		= /usr/lang/acc
 # CCFLAGS 	= -c -O
 
-CC		= ../../bin/ssbig-na-sstrix-gcc -static -ansi -pedantic 
-		  # gcc -ansi -pedantic -mv8 -static
+CC = gcc -ansi -pedantic -static
 CCFLAGS 	= -c -O2 -DNeedFunctionPrototypes=1
 
 LD 		= $(CC)
@@ -88,9 +87,9 @@ TOAST_INSTALL_MAN = $(TOAST_INSTALL_ROOT)/man/man1
 SHELL		= /bin/sh
 LN		= ln
 BASENAME 	= basename
-AR		= ../../bin/ssbig-na-sstrix-ar				#/usr/ccs/bin/ar
+AR		= ar#../../bin/ssbig-na-sstrix-ar				#/usr/ccs/bin/ar
 ARFLAGS		= cr
-RMFLAGS		=
+RMFLAGS		= -f
 FIND		= find
 COMPRESS 	= compress
 COMPRESSFLAGS 	= 

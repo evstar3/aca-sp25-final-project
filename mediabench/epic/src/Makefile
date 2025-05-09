@@ -30,8 +30,8 @@ UNEPIC_OBJECTS = unepic.o collapse_pyr.o
 
 CONVOLVE_OBJECTS =  convolve.o edges.o 
 
-CC = ../../../bin/ssbig-na-sstrix-gcc # -mv8 -static 				BEN
-# CC = cc
+#CC = ../../../bin/ssbig-na-sstrix-gcc # -mv8 -static 				BEN
+CC = gcc
 
 CFLAGS = -O2   ## For GCC
 # CFLAGS = -O4 -fsingle  ## Optimize on Sun-4/SPARC
@@ -44,7 +44,7 @@ all: epic unepic
 	cp epic unepic ../bin/.
 
 epic: $(EPIC_OBJECTS) $(SHARED_OBJECTS) $(CONVOLVE_OBJECTS)
-	${CC} $(CFLAGS) -o epic $(EPIC_OBJECTS) $(SHARED_OBJECTS) $(CONVOLVE_OBJECTS) -lc  	# -lm
+	${CC} $(CFLAGS) -o epic $(EPIC_OBJECTS) $(SHARED_OBJECTS) $(CONVOLVE_OBJECTS) -lc -lm
 
 unepic: $(UNEPIC_OBJECTS) $(SHARED_OBJECTS)
 	${CC} $(CFLAGS) -o unepic $(UNEPIC_OBJECTS) $(SHARED_OBJECTS) -lc  			# -lm
