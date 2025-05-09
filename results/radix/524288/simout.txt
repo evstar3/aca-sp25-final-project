@@ -1,0 +1,33 @@
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version DEVELOP-FOR-25.0
+gem5 compiled May  9 2025 14:33:56
+gem5 started May  9 2025 18:41:02
+gem5 executing on EVAN-DAY-SPECTRE, pid 29141
+command line: gem5/build/X86/gem5.opt --outdir=results/radix/524288 --redirect-stdout --redirect-stderr gem5/configs/decay_cache/single_rate.py -r 131072 Splash-3/codes/kernels/radix/RADIX -p1 -n16384
+
+info: Standard input is not a terminal, disabling listeners.
+Global frequency set at 1000000000000 ticks per second
+Beginning simulation...
+
+Integer Radix Sort
+     16384 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 67108864
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0              0               0               0
+
+                 TIMING INFORMATION
+Start time                        :       1000000000
+Initialization finish time        :       1000000000
+Overall finish time               :       1000000000
+Total time with initialization    :                0
+Total time without initialization :                0
+
+Exiting @ tick 1937868500 because exiting with last active thread context

@@ -1,0 +1,32 @@
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version DEVELOP-FOR-25.0
+gem5 compiled May  9 2025 14:33:56
+gem5 started May  9 2025 18:38:04
+gem5 executing on EVAN-DAY-SPECTRE, pid 28762
+command line: gem5/build/X86/gem5.opt --outdir=results/lu/1024 --redirect-stdout --redirect-stderr gem5/configs/decay_cache/single_rate.py -r 256 Splash-3/codes/kernels/lu/contiguous_blocks/LU -p1 -n64
+
+info: Standard input is not a terminal, disabling listeners.
+Global frequency set at 1000000000000 ticks per second
+Beginning simulation...
+
+Blocked Dense LU Factorization
+     64 by 64 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0             0             0             0             0             0
+
+                            TIMING INFORMATION
+Start time                        :       1000000000
+Initialization finish time        :       1000000000
+Overall finish time               :       1000000000
+Total time with initialization    :                0
+Total time without initialization :                0
+
+Exiting @ tick 828550500 because exiting with last active thread context

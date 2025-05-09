@@ -1,0 +1,30 @@
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version DEVELOP-FOR-25.0
+gem5 compiled May  9 2025 14:33:56
+gem5 started May  9 2025 18:18:06
+gem5 executing on EVAN-DAY-SPECTRE, pid 24744
+command line: gem5/build/X86/gem5.opt --outdir=results/fmm/8192 --redirect-stdout --redirect-stderr gem5/configs/decay_cache/single_rate.py -r 2048 Splash-3/codes/apps/fmm/FMM
+
+info: Standard input is not a terminal, disabling listeners.
+Global frequency set at 1000000000000 ticks per second
+Beginning simulation...
+Creating a two cluster, non uniform distribution for 256 particles
+Starting FMM with 1 processor
+Finished FMM
+                                   PROCESS STATISTICS
+             Track        Tree        List        Part        Pass       Inter        Bar        Intra       Other
+ Proc        Time         Time        Time        Time        Time       Time         Time       Time        Time
+    0            0           0           0           0           0           0           0           0           0
+
+                                   TIMING INFORMATION
+Start time                        :       1000000000
+Initialization finish time        :       1000000000
+Overall finish time               :       1000000000
+Total time with initialization    :                0
+Total time without initialization :                0
+
+Total time for steps 3 to 5 :            0
+
+Exiting @ tick 6262112500 because exiting with last active thread context

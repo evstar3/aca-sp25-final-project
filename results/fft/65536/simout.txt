@@ -1,0 +1,46 @@
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version DEVELOP-FOR-25.0
+gem5 compiled May  9 2025 14:33:56
+gem5 started May  9 2025 18:37:02
+gem5 executing on EVAN-DAY-SPECTRE, pid 28474
+command line: gem5/build/X86/gem5.opt --outdir=results/fft/65536 --redirect-stdout --redirect-stderr gem5/configs/decay_cache/single_rate.py -r 16384 Splash-3/codes/kernels/fft/FFT -p1 -m10
+
+info: Standard input is not a terminal, disabling listeners.
+Global frequency set at 1000000000000 ticks per second
+Beginning simulation...
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+iter_num = 32
+Transpose: iter_num = 0
+Step 1:        0
+FFt1DOnce: iter_num = 80
+Step 2:        0
+Transpose: iter_num = 0
+Step 3:        0
+Step 4:        0
+Transpose: iter_num = 0
+Step 5:        0
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0                 0              0          -nan
+
+                 TIMING INFORMATION
+Start time                        :       1000000000
+Initialization finish time        :       1000000000
+Overall finish time               :       1000000000
+Total time with initialization    :                0
+Total time without initialization :                0
+Overall transpose time            :                0
+Overall transpose fraction        :             -nan
+
+Exiting @ tick 438803500 because exiting with last active thread context

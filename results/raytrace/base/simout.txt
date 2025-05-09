@@ -1,0 +1,19 @@
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version DEVELOP-FOR-25.0
+gem5 compiled May  9 2025 14:33:56
+gem5 started May  9 2025 18:26:30
+gem5 executing on EVAN-DAY-SPECTRE, pid 26381
+command line: gem5/build/X86/gem5.opt --outdir=results/raytrace/base --redirect-stdout --redirect-stderr gem5/configs/decay_cache/base.py Splash-3/codes/apps/raytrace/RAYTRACE -p1 -m64 Splash-3/codes/apps/raytrace/inputs/car.env
+
+info: Standard input is not a terminal, disabling listeners.
+Global frequency set at 1000000000000 ticks per second
+Beginning simulation...
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Unable to open model file inputs/car.geo.
+Exiting @ tick 263082000 because exiting with last active thread context

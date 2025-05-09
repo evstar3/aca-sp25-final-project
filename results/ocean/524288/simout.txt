@@ -1,0 +1,35 @@
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version DEVELOP-FOR-25.0
+gem5 compiled May  9 2025 14:33:56
+gem5 started May  9 2025 18:24:17
+gem5 executing on EVAN-DAY-SPECTRE, pid 26079
+command line: gem5/build/X86/gem5.opt --outdir=results/ocean/524288 --redirect-stdout --redirect-stderr gem5/configs/decay_cache/single_rate.py -r 131072 Splash-3/codes/apps/ocean/contiguous_partitions/OCEAN -p1 -n10
+
+info: Standard input is not a terminal, disabling listeners.
+Global frequency set at 1000000000000 ticks per second
+Beginning simulation...
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 10 x 10
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0                 0                  0              -nan
+
+                       TIMING INFORMATION
+Start time                        :       1000000000
+Initialization finish time        :       1000000000
+Overall finish time               :       1000000000
+Total time with initialization    :                0
+Total time without initialization :                0
+    (excludes first timestep)
+
+Exiting @ tick 495361500 because exiting with last active thread context
