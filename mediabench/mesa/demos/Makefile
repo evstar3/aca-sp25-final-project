@@ -37,7 +37,7 @@
 
 INCDIR = ../include
 
-GL_LIBS = -L../lib -L/export/ramoth4/bishop/simplescalar/ssbig-na-sstrix/lib/ -lMesaaux -lMesaGLU -lMesaGL -lc
+GL_LIBS = -L../lib -lMesaaux -lMesaGLU -lMesaGL -lc
 
 LIB_DEP = ../lib/$(GL_LIB) ../lib/$(GLU_LIB) ../lib/$(AUX_LIB)
 

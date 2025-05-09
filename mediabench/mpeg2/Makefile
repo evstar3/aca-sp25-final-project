@@ -53,8 +53,8 @@
 #
 # GNU gcc
 #
-CC = /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-gcc
-CFLAGS = -O2 -static
+CC = gcc #/export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-gcc
+CFLAGS = -lm -O2 -static
 
 all: mpeg2decode mpeg2encode
 

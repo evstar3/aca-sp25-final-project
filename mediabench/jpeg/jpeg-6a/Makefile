@@ -20,7 +20,7 @@ manext = 1
 mandir = $(prefix)/man/man$(manext)
 
 # The name of your C compiler:
-CC= /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-gcc
+CC= gcc #/export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-gcc
 
 # You may need to adjust these cc options:
 CFLAGS= -O  -I$(srcdir)
@@ -49,9 +49,9 @@ RM= rm -f
 # file rename command
 MV= mv
 # library (.a) file creation command
-AR= /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-ar rc
+AR= ar rc#/export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-ar rc
 # second step in .a creation (use "touch" if not needed)
-AR2= /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-ranlib
+AR2= touch#/export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-ranlib
 # installation program
 INSTALL= cp
 INSTALL_PROGRAM= ${INSTALL}

@@ -54,13 +54,13 @@
 # -DUSE_SELECT to use select() system call
 # -DUSE_NBIO   to use non-blocking read()
 
-CFLAGS= -I/export/ramoth4/bishop/simplescalar/ssbig-na-sstrix/include/ -O -DUNIX -DPORTABLE $(BYTEORDER)
+CFLAGS=  -O -DUNIX -DPORTABLE $(BYTEORDER)
 
 # must set byte order for targets "sysv" and "bsd"
 BYTEORDER= -DHIGHFIRST
 
-CC      = /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-gcc -static
-LD      = /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-gcc		# Link command
+CC      = gcc -static
+LD      = gcc		# Link command
 LDFLAGS	= 
 CPP     = $(CC) -E
 DBG	= -O

@@ -201,10 +201,10 @@ gcc:
 	"GLU_LIB = libMesaGLU.a" \
 	"TK_LIB = libMesatk.a" \
 	"AUX_LIB = libMesaaux.a" \
-	"CC = /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-gcc" \
-	"CFLAGS = -pedantic -O2 -static" \
-	"MAKELIB = /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-ar ruv" \
-	"RANLIB = /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-ranlib" \
+	"CC = gcc" \
+	"CFLAGS = -lm -pedantic -O2 -static" \
+	"MAKELIB = ar ruv" \
+	"RANLIB = ranlib" \
 	"XLIBS = -lX11"
 
 

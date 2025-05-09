@@ -18,7 +18,7 @@ SHELL=/bin/sh
 
 prefix = /export/ramoth4/bishop/simplescalar/mediabench/rasta
 exec_prefix = ${prefix}
-libdir = /export/ramoth4/bishop/simplescalar/mediabench/rasta/src/sphere2/nist/lib #$(exec_prefix)/lib
+libdir = $(exec_prefix)/lib
 bindir = $(exec_prefix)/bin
 includedir = $(exec_prefix)/include
 mandir = $(prefix)/man
@@ -30,7 +30,7 @@ transform = s,x,x,
 
 # Programs we use.
 
-CC = /export/ramoth4/bishop/simplescalar/bin/ssbig-na-sstrix-gcc 
+CC = gcc
 LD = $(CC)
 INSTALL = ./install-sh -c
 INSTALL_PROG = $(INSTALL)
@@ -38,7 +38,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 
 # Tool arguments.
 
-CFLAGS = -g -O -static -I/export/ramoth4/bishop/simplescalar/ssbig-na-sstrix/include/ 
+CFLAGS = -g -O -static
 LDFLAGS = -Lsphere2/nist/lib
 LIBS =  -lsp -lutil
 
