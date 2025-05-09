@@ -17,6 +17,7 @@ Follow these steps to set up and run the project on your local machine:
     This step is crucial for including the `gem5` simulator, which is managed as a submodule within this project. The command fetches the necessary `gem5` files. If you've previously cloned the project and are just setting up the submodule, you might need to first run:
     ```bash
     git config --file .gitmodules submodule.gem5.url https://github.com/evstar3/aca-sp25-gem5.git
+    git config --file .gitmodules submodule.phoronix-test-suite.url https://github.com/phoronix-test-suite/phoronix-test-suite.git
     git submodule sync
     ```
     before the `git submodule update` command.
