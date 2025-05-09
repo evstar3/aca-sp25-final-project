@@ -85,7 +85,7 @@ fi
     --redirect-stdout \
     --redirect-stderr \
     "$BASE_CONFIG" \
-    $COMMAND &
+    $COMMAND
 
 for RATE in $RATES; do
     QTR_RATE=$(echo $RATE / 4 | bc)
@@ -96,7 +96,5 @@ for RATE in $RATES; do
         --redirect-stderr \
         "$DECAY_CONFIG" \
         -r "$QTR_RATE" \
-        $COMMAND &
+        $COMMAND
 done
-
-wait
