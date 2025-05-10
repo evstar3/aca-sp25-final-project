@@ -33,6 +33,11 @@ Follow these steps to set up and run the project on your local machine:
     git checkout decay-cache
     ```
     This command ensures you are using the specific version of the `gem5` simulator (`decay-cache` branch) that is required for this project.
+    The files modified in this branch are:
+- `src/mem/cache/decay_cache.hh`: decay cache header file
+- `src/mem/cache/decay_cache.cc`: gem5 decay cache implementation
+- `src/mem/cache/DecayCache.py`: decay cache Python interface
+- `configs/decay_cache/*`: testing configurations
 
 5.  **System Packages**
 
